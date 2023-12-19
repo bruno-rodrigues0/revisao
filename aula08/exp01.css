@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 10vh 80vh 10vh;
+    background-color: black;
+}
+
+.header{
+    grid-column: 1/4;
+    background-color: aqua;
+}
+
+.left{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.left > div{
+    background-color: black;
+}
+
+.rigt > div:nth-child(3n + 1) > p{
+    background-color: red;
+}
+
+div > p{
+    background-color: aqua;
+}
+
+.main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: bisque;
+}
+
+.rigt{
+    grid-column: 3/4;
+    grid-row: 2/2;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.rigt > div{
+    background-color: black;
+    color: aliceblue;
+}
+
+.fote{
+    grid-column: 1/4;
+    grid-row: 3/3;
+    background-color: blue;
+}
+
+
+
+

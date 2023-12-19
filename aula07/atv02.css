@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    margin: 20px;
+}
+
+.container{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+div{
+    background-color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+
+}
